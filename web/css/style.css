@@ -1,0 +1,452 @@
+/*
+	Copyright (c) Larissa Werder 2017
+*/
+
+/* FONTS --------------------------------------------------------------------------------- */
+@font-face { 
+	font-family: "lexio"; 
+	src: url("../fonts/Dolce Vita.ttf"); 
+}
+
+@font-face { 
+	font-family: "dolce-vita"; 
+	src: url("../fonts/NEOTERIC.ttf"); 
+}
+
+@font-face { 
+	font-family: "altera"; 
+	src: url("../fonts/Altera.ttf"); 
+}
+
+body {
+    background-color: #222222;
+	margin: 0;
+	padding: 0;
+	color: #FFFFFF;
+	display: flex;
+	width: 100%;
+	height: 100%;
+	flex-direction: column;
+	
+	
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+}
+
+/* NAVIGATION --------------------------------------------------------------------------  */
+nav{
+	background-color: #49B7FF;
+	width: 100%;
+	height: 90px;
+	display: flex;
+	align-items: center;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+nav span{
+	display: flex;
+	align-items: center;
+	flex-direction: row;
+}
+
+/* abstand navigations-menü vom Rand, direktes span-child wird selektiert*/
+nav > span:nth-child(2) {
+	margin: 0 10px 0 0;
+}
+
+#navigation_title{
+	letter-spacing: 3px;
+	font-weight: 100;
+	font-size: 30px;
+	font-family: "lexio";
+
+}
+
+#navigation_logo{
+	background-image: url("../img/solar-system-light.svg");
+	background-repeat: no-repeat;
+	width: 60px;
+	height: 60px;
+	margin: 0px 10px 0 10px;
+}
+
+.navigation_icon{
+	width: 25px;
+	height: 25px;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+/* main nav */ 
+#home_logo{
+	background-image: url("../img/home.svg");
+}
+
+#members_logo{
+	background-image: url("../img/team.svg");
+}
+
+#facebook_logo{
+	background-image: url("../img/facebook.svg");
+}
+
+#twitch_logo{
+	background-image: url("../img/twitch.svg");
+
+}
+
+#discord_logo{
+	background-image: url("../img/discord.svg");
+}
+
+#youtube_logo{
+	background-image: url("../img/youtube.svg");
+}
+
+.background-circle{
+	display: flex;
+	align-items: center;
+	flex-direction: row;
+	justify-content: center;
+	
+	border-radius: 50%;
+	background-color: #2176AD;
+	width: 45px;
+	height: 45px;
+	margin: 0 0 0 15px;
+}
+/* MAIN ---------------------------------------------------------------------------------------------------  */ 
+/* content title */ 
+main > div:nth-child(1) {
+	font-family: "dolce-vita";
+	letter-spacing: 3px;
+	font-weight: 100;
+	font-size: 45px;
+	color: #49B7FF;
+	
+	margin: 50px 0 0 0;
+   
+   display: flex;
+   	align-items: center;
+	flex-direction: row;
+	justify-content: center;
+   
+}
+
+main > div > span:nth-child(2) {
+	display: flex;
+}
+
+.main_icon{
+	min-width: 55px;
+	min-height: 55px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin: 0 10px 0 0;
+}
+
+
+
+
+
+.main_title_lines{
+	width: calc(100% - 60px);
+	height: 2px;
+	background:  #49B7FF;
+	margin: 0 30px 0 30px;
+}
+
+/* members.html ------------------------------------------------------------------------------------------------------- ------------------------------------------------------------  */
+/* spesific to page */ 
+#main_members_icon{
+	background-image: url("../img/heroes_icon.png");
+}
+
+#member_introduction{
+	display: flex;
+	font-family: "dolce-vita";
+	letter-spacing: 1px;
+	font-weight: 400px;
+	font-size: 25px;
+	color: #FFFFFF;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+	
+	margin: 30px 40px 30px 40px;
+}
+
+#member_introduction span{
+	width: 800px;
+}
+
+.member_container {
+	display: flex;
+	font-family: "lexio";
+	
+	letter-spacing: 8px;
+	font-weight: 100;
+	font-size: 40px;
+	color: #FFFFFF;
+	margin: 30px 40px 30px 40px;
+}
+
+#horus_icon{
+	background-image: url("../img/members/horus.png");
+}
+
+#saint23_icon{
+	background-image: url("../img/members/saint23.png");
+}
+
+#dralur_icon{
+	background-image: url("../img/members/dralur.png");
+}
+
+/* member Bild */
+.member_container > span:nth-child(1) > span:nth-child(1){
+	border-radius: 50%;
+    width: 250px;
+    height: 250px; 
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+/* container des member-bildes und namen */
+.member_container > span:nth-child(1){
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+/* abstand des member-Namen vom Bild */ 
+.member_container > span:nth-child(1) > span:nth-child(2){
+	margin: 10px 0 10px 0;
+}
+/* Roll*/
+.member_container > span:nth-child(1) > span:nth-child(3){
+	font-size: 20px;
+	text-align: center;
+	font-weight: bold;
+	color: #49B7FF;
+}
+.member_container > span:nth-child(1) > span:nth-child(4){
+	font-size: 20px;
+	text-align: center;
+	margin: 10px 0 20px 0;
+}
+
+/* Battle-Tag*/
+.member_container > span:nth-child(1) > span:nth-child(5){
+	font-size: 20px;
+	text-align: center;
+	font-weight: bold;
+	color: #49B7FF;
+}
+.member_container > span:nth-child(1) > span:nth-child(6){
+	font-size: 20px;
+	text-align: center;
+	margin: 10px 0 10px 0;
+}
+
+/* eigendlicher inhalt, text und main heroes werden vertikal gewrappt */
+.member_container > span:nth-child(2){
+	font-family: "dolce-vita";
+	letter-spacing: 1px;
+	font-weight: 400px;
+	font-size: 20px;
+	color: #FFFFFF;
+	margin: 0 40px 0 40px;
+	
+	display: flex;
+	flex-direction: column;
+}
+
+/* profiltext */ 
+.member_container > span:nth-child(2) > span:nth-child(1){
+font-size: 25px;
+}
+
+/* inhalt hots main chars */ 
+.member_container_hots_main_chars{
+	margin: 20px 0 0 0;
+	color: #49B7FF;
+}
+
+/* main char icon  container flex  hots*/
+.member_container_hots_main_chars > div:nth-child(2){
+	display: flex;
+}
+
+/* inhalt overwatch main chars */ 
+.member_container_overwatch_main_chars{
+	margin: 20px 0 0 0;
+	color: #49B7FF;
+}
+
+/* main char icon container flex overwatch*/
+.member_container_overwatch_main_chars > div:nth-child(2){
+	display: flex;
+	margin-bottom: 20px;
+}
+
+.member_container_other_games{
+	margin: 20px 0 0 0;
+}
+
+/* div wrapper */
+.member_container_other_games > div{
+	display: flex;
+	flex-direction: column;
+}
+
+/* wrapper eines spieles */
+.member_container_other_games > div > span{
+
+	margin: 10px 0 0 0;
+	background-color: yellow;
+	vertical-align: middle;
+}
+
+/* game icon */
+.member_container_other_games > div > span > span:nth-child(1){
+	margin: 0 10px 0 0;
+}
+
+/* --------------------------- */
+
+.main_char_icons{
+	width: 60px;
+	height: 60px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	border-radius: 50%;
+	margin: 10px 10px 0 0;
+}
+/* overwatch icons http://overwatch.gamepedia.com/Heroes */
+.overwatch_dva_icon{
+	background-image: url("../img/overwatch/dva.png");
+}
+
+.overwatch_genji_icon{
+	background-image: url("../img/overwatch/genji.png");
+}
+
+.overwatch_reinhardt_icon{
+	background-image: url("../img/overwatch/reinhardt.png");
+}
+
+.overwatch_symmetra_icon{
+	background-image: url("../img/overwatch/symmetra.png");
+}
+
+/* hots icons https://www.heroesfire.com/hots/wiki/heroes */
+.hots_dva_icon{
+	background-image: url("../img/hots/dva.png");
+}
+
+.hots_genji_icon{
+	background-image: url("../img/hots/genji.png");
+}
+
+.hots_jaina_icon{
+	background-image: url("../img/hots/jaina.png");
+}
+
+.hots_murky_icon{
+	background-image: url("../img/hots/murky.png");
+}
+
+.hots_sonya_icon{
+	background-image: url("../img/hots/sonya.png");
+}
+
+.hots_johanna_icon{
+	background-image: url("../img/hots/johanna.png");
+}
+
+.hots_zagara_icon{
+	background-image: url("../img/hots/zagara.png");
+}
+
+.hots_artanis_icon{
+	background-image: url("../img/hots/artanis.png");
+}
+
+.hots_illidan_icon{
+	background-image: url("../img/hots/illidan.png");
+}
+
+/* hobby game icons */
+
+.hobby_icons{
+	width: 40px;
+	height: 40px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	border-radius: 50%;
+}
+
+.league_of_legends_icon{
+	background-image: url("../img/games/lol.png");
+}
+
+.playerunknowns_battlegrounds_icon{
+	background-image: url("../img/games/playerunknowns_battleground.png");
+}
+
+.the_binding_of_isaac_icon{
+	background-image: url("../img/games/the_binding_of_isaac.png");
+}
+
+
+/*home.html ----------------------------------------------------------------------------------------------------- */ 
+
+/* REPLACE THIS! */
+#main_home_icon{
+	background-image: url("../img/team.svg");
+}
+
+.home_container {
+	display: flex;
+	flex-directon:column;
+	margin: 30px 40px 30px 40px;
+	
+	font-family: "dolce-vita";
+	letter-spacing: 1px;
+	font-weight: 400px;
+	font-size: 20px;
+	color: #FFFFFF;
+}
+
+
+/* because numbers aren't supported */ 
+.numbers{
+	font-family:"altera";
+	font-size: 17px;
+	letter-spacing: 2px;
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
