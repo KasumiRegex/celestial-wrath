@@ -1,0 +1,158 @@
+$break-medium: 36em
+$break-big: 80em
+
+$break-two: 36em
+$break-three: 65em
+$break-four: 76em
+
+$scale_factor_small_x: 305/610
+$scale_factor_small_y: 275/550
+$scale_factor_medium_x: 458/610
+$scale_factor_medium_y: 413/550
+$scale_factor: 1
+
+@mixin medium-screen
+  @media screen and (min-width: $break-three)
+    @content
+
+@mixin big-screen
+  @media screen and (min-width: $break-big)
+    @content
+
+
+=background_position($x, $y)
+  background-position: $x*$scale_factor_small_x $y*$scale_factor_small_y
+
+  @include medium-screen
+    background-position: round($x*$scale_factor_medium_x) round($y*$scale_factor_medium_y)
+
+  @include big-screen
+    background-position: $x*$scale_factor $y*$scale_factor
+
+
+/* overwatch icons http://overwatch.gamepedia.com/Heroes
+
+.sprite
+  background-image: url(../img/overwatch_spritesheet_small.png)
+  background-repeat: no-repeat
+  display: block
+
+  @include medium-screen
+    background-image: url(../img/overwatch_spritesheet_medium.png)
+
+  @include big-screen
+    background-image: url(../img/overwatch_spritesheet.png)
+
+
+.overwatch_icon
+  width: 100px*$scale_factor_small_x
+  height: 100px*$scale_factor_small_y
+
+  @include medium-screen
+    width: round(100px*$scale_factor_medium_x)
+    height: round(100px*$scale_factor_medium_y)
+
+  @include big-screen
+    width: 100px*$scale_factor
+    height: 100px*$scale_factor
+
+
+.sprite-Icon-Junkrat
+  @extend .overwatch_icon
+  +background_position( -5px, -5px)
+
+.sprite-Icon-Lucio
+  @extend .overwatch_icon
+  +background_position( -127px, -5px)
+
+.sprite-Icon-Roadhog
+  @extend .overwatch_icon
+  +background_position( -249px, -5px)
+
+.sprite-Icon-Soldier76
+  @extend .overwatch_icon
+  +background_position( -371px, -5px)
+
+.sprite-Icon-ana
+  @extend .overwatch_icon
+  +background_position( -5px, -115px)
+
+.sprite-Icon-bastion
+  @extend .overwatch_icon
+  +background_position( -127px, -115px)
+
+.sprite-Icon-doomfist
+  @extend .overwatch_icon
+  +background_position( -249px, -115px)
+
+.sprite-Icon-dva
+  @extend .overwatch_icon
+  +background_position( -371px, -115px)
+
+.sprite-Icon-genji
+  @extend .overwatch_icon
+  +background_position( -5px, -225px)
+
+.sprite-Icon-hanzo
+  @extend .overwatch_icon
+  +background_position( -127px, -225px)
+
+.sprite-Icon-mccree
+  @extend .overwatch_icon
+  +background_position( -249px, -225px)
+
+.sprite-Icon-mei
+  @extend .overwatch_icon
+  +background_position( -371px, -225px)
+
+.sprite-Icon-mercy
+  @extend .overwatch_icon
+  +background_position( -5px, -335px)
+
+.sprite-Icon-orisa
+  @extend .overwatch_icon
+  +background_position( -127px, -335px)
+
+.sprite-Icon-pharah
+  @extend .overwatch_icon
+  +background_position( -249px, -335px)
+
+.sprite-Icon-reaper
+  @extend .overwatch_icon
+  +background_position( -371px, -335px)
+
+.sprite-Icon-reinhardt
+  @extend .overwatch_icon
+  +background_position( -5px, -445px)
+
+.sprite-Icon-sombra
+  @extend .overwatch_icon
+  +background_position( -127px, -445px)
+
+.sprite-Icon-symmetra
+  @extend .overwatch_icon
+  +background_position( -249px, -445px)
+
+.sprite-Icon-torbjorn
+  @extend .overwatch_icon
+  +background_position( -371px, -445px)
+
+.sprite-Icon-tracer
+  @extend .overwatch_icon
+  +background_position( -493px, -5px)
+
+.sprite-Icon-widowmaker
+  @extend .overwatch_icon
+  +background_position( -493px, -115px)
+
+.sprite-Icon-winston
+  @extend .overwatch_icon
+  +background_position( -493px, -225px)
+
+.sprite-Icon-zarya
+  @extend .overwatch_icon
+  +background_position( -493px, -335px)
+
+.sprite-Icon-zenyatta
+  @extend .overwatch_icon
+  +background_position( -493px, -445px)

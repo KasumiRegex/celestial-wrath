@@ -1,0 +1,258 @@
+<!-- Copyright (c) Larissa Werder 2017 -->
+<!-- livereload .-->
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Celestial Wrath</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+
+    <link rel="stylesheet" type="text/css" href="css/overwatch_icons.css">
+
+    <!-- must be deleted afterwards!!!-->
+    <script>
+        document.write('<script src="http://' +
+            (location.host || 'localhost').split(':')[0] +
+            ':35729/livereload.js?snipver=1"></' + 'script>')
+    </script>
+    <!--- end--->
+    <script src="js/app.js"></script>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/main.js"></script>
+</head>
+
+<body>
+<header>
+
+    <span class="wrapper">
+        <span class="left">
+			<span id="navigation_logo" class="left"></span>
+            <span id="navigation_title" class="left">CELESTIAL WRATH</span>
+        </span>
+
+		<nav>
+			<span id="menu_icon" class="smartphone">☰</span>
+			<ul id="smartphone_navigation">
+				<li>
+					<a href="#">
+						<span class="background-circle">
+							<span class="home_logo navigation_icon"></span>
+						</span>
+						<span class="smartphone">Home</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<span class="background-circle">
+							<span class="members_logo navigation_icon"></span>
+						</span>
+						<span class="smartphone">Teams</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<span class="background-circle">
+							<span class="facebook_logo navigation_icon"></span>
+						</span>
+						<span class="smartphone">Facebook</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<span class="background-circle">
+							<span class="twitch_logo navigation_icon"></span>
+						</span>
+						<span class="smartphone">Twitch</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<span class="background-circle">
+							<span class="discord_logo navigation_icon"></span>
+						</span>
+						<span class="smartphone">Discord</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<span class="background-circle">
+							<span class="youtube_logo navigation_icon"></span>
+						</span>
+						<span class="smartphone">Youtube</span>
+					</a>
+				</li>
+			</ul>
+        </nav>
+
+    </span>
+</header>
+
+
+<main>
+
+    <div class="wrapper">
+        <!-- main content title -->
+        <div id="introduction">
+            <!--<span class="main_title_lines_team_hots"></span>-->
+			<div id="introduction_title">
+            	<span><i class="hots_icon main_icon" id="main_members_icon"></i>TEAM Overwatch</span>
+			</div>
+
+			<div id="member_introduction" class="clear" >
+				<span>There are many faces behind this team. Although most of them aren't beautiful, we sure are people you want to hang around with and grow as a team.</span>
+				<span class="clear">That said, let us show you who we are.</span>
+			</div>
+            <!--<span class="main_title_lines_team_hots"></span>-->
+        </div>
+    </div>
+        <!-- and finally the real content -->
+        <div id="big_members_container">
+
+
+                <div class="member_container" onclick="window.location = 'player.html';">
+                    <!-- Picture and Names -->
+                    <div class="wrapper " >
+                        <div class="member_stats">
+                            <span class="member_img ashowl_icon"></span>
+                            <span class="member_info">
+                                <span class="member_nickname"><b>Ashowl</b></span>
+                                <!--<span class="member_role"><b>Role: </b>Offense</span>-->
+                            </span>
+                        </div>
+                        <div class="member_main_heroes">
+                            <div class="title"><b>Main Heroes</b></div>
+                            <div class="sprites">
+                                <i class="sprite sprite-Icon-tracer main_char_icons"></i>
+                                <i class="sprite sprite-Icon-Soldier76 main_char_icons"></i>
+                                <i class="sprite sprite-Icon-mccree main_char_icons"></i>
+                                <i class="sprite sprite-Icon-genji main_char_icons"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="member_container" onclick="window.location = 'player.html';">
+                    <!-- Picture and Names -->
+                    <div class="wrapper">
+                        <div class="member_stats">
+                            <span class="member_img horus_icon"></span>
+                            <span class="member_info">
+                                <span class="member_nickname"><b>Horus</b></span>
+                                <!--<span class="member_role"><b>Role: </b>Tank</span>-->
+                            </span>
+                        </div>
+                        <div class="member_main_heroes">
+                            <div class="title"><b>Main Heroes</b></div>
+                            <div class="sprites">
+                                <i class="sprite sprite-Icon-dva main_char_icons"></i>
+                                <i class="sprite sprite-Icon-winston main_char_icons"></i>
+                                <i class="sprite sprite-Icon-zenyatta main_char_icons"></i>
+                                <i class="sprite sprite-Icon-genji main_char_icons"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="member_container" onclick="window.location = 'player.html';">
+                    <!-- Picture and Names -->
+                    <div class="wrapper">
+                        <div class="member_stats">
+                            <span class="member_img rainElaria_icon"></span>
+                            <span class="member_info">
+                                <span class="member_nickname"><b>RainElaria</b></span>
+                                <!--<span class="member_role"><b>Role: </b>Heal</span>-->
+                            </span>
+                        </div>
+                        <div class="member_main_heroes">
+                            <div class="title"><b>Main Heroes</b></div>
+                            <div class="sprites">
+                                <i class="sprite sprite-Icon-mercy main_char_icons"></i>
+                                <i class="sprite sprite-Icon-Lucio main_char_icons"></i>
+                                <i class="sprite sprite-Icon-ana main_char_icons"></i>
+                                <i class="sprite sprite-Icon-zenyatta main_char_icons"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            <div class="member_container" onclick="window.location = 'player.html';">
+                <!-- Picture and Names -->
+                <div class="wrapper">
+                    <div class="member_stats">
+                        <span class="member_img ashowl_icon"></span>
+                        <span class="member_info">
+                                <span class="member_nickname"><b>Ashowl</b></span>
+                            <!--<span class="member_role"><b>Role: </b>Offense</span>-->
+                    </span>
+                </div>
+                <div class="member_main_heroes">
+                    <div class="title"><b>Main Heroes</b></div>
+                    <div class="sprites">
+                        <i class="sprite sprite-Icon-tracer main_char_icons"></i>
+                        <i class="sprite sprite-Icon-Soldier76 main_char_icons"></i>
+                        <i class="sprite sprite-Icon-mccree main_char_icons"></i>
+                        <i class="sprite sprite-Icon-genji main_char_icons"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="member_container" onclick="window.location = 'player.html';">
+            <!-- Picture and Names -->
+                <div class="wrapper">
+                    <div class="member_stats">
+                        <span class="member_img horus_icon"></span>
+                        <span class="member_info">
+                                <span class="member_nickname"><b>Horus</b></span>
+                            <!--<span class="member_role"><b>Role: </b>Tank</span>-->
+                    </span>
+                </div>
+                <div class="member_main_heroes">
+                    <div class="title"><b>Main Heroes</b></div>
+                    <div class="sprites">
+                        <i class="sprite sprite-Icon-dva main_char_icons"></i>
+                        <i class="sprite sprite-Icon-winston main_char_icons"></i>
+                        <i class="sprite sprite-Icon-zenyatta main_char_icons"></i>
+                        <i class="sprite sprite-Icon-genji main_char_icons"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="member_container" onclick="window.location = 'player.html';">
+            <!-- Picture and Names -->
+                <div class="wrapper">
+                    <div class="member_stats">
+                        <span class="member_img rainElaria_icon"></span>
+                        <span class="member_info">
+                                <span class="member_nickname"><b>RainElaria</b></span>
+                            <!--<span class="member_role"><b>Role: </b>Heal</span>-->
+                    </span>
+                </div>
+                <div class="member_main_heroes">
+                    <div class="title"><b>Main Heroes</b></div>
+                    <div class="sprites">
+                        <i class="sprite sprite-Icon-mercy main_char_icons"></i>
+                        <i class="sprite sprite-Icon-Lucio main_char_icons"></i>
+                        <i class="sprite sprite-Icon-ana main_char_icons"></i>
+                        <i class="sprite sprite-Icon-zenyatta main_char_icons"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+</main>
+
+
+<footer>
+<div class="wrapper"></div>
+</footer>
+
+</body>
+
+</html>

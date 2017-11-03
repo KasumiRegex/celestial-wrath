@@ -1,0 +1,645 @@
+/**
+ *	Copyright (c) Larissa Werder, Alex Lopez 2017
+ *
+ *
+ *    FONTS ---------------------------------------------------------------------------------
+
+@font-face
+  font-family: "lexio"
+  src: url("../fonts/Dolce Vita.ttf")
+
+@font-face
+  font-family: "dolce-vita"
+  src: url("../fonts/NEOTERIC.ttf")
+
+/* cameronsans https://www.dafontfree.net/freefonts-cameronsans-f163597.htm
+@font-face
+  font-family: "cameronsans"
+  src: url("../fonts/cameronsans.ttf")
+
+/** Variables
+$brek-one: 360px
+$break-two: 41em
+$break-three: 65em
+$break-four: 76em
+
+$headerFont: dolce-vita
+$textFont: cameronsans
+$title: lexio
+$text-color: #FFF
+$background_color: #222222
+$light_blue: #49B7FF
+
+$font_size_text: 1.1em
+$font_size_text_medium: 1.2em
+$font_size_text_big: 1.3em
+
+$font_size_h: 1.5em
+$font_size_h_medium: 1.6em
+$font_size_h_big: 2em
+
+$font_size_h2: 1.5em
+$font_size_h2_medium: 1.5em
+$font_size_h2_big: 1.5em
+
+$font_size_title: 1.6em
+$font_size_title_medium: 2em
+$font_size_title_big: 3em
+
+$footer_nav_size: 5em
+$footer_nav_size_medium: 7em
+$footer_nav_size_big: 10em
+
+$home_icon: url("../img/home.svg")
+$team_icon: url("../img/team.svg")
+$facebook_icon: url("../img/facebook.svg")
+$twitch_icon: url("../img/twitch.svg")
+$disord_icon: url("../img/discord.svg")
+$youtube_icon: url("../img/youtube.svg")
+$hots_icon: url("../img/heroes_icon.png")
+
+/*player icons
+$ashowl_icon: url("../img/profile_pictures/ashowl.jpg")
+
+@mixin small-screen
+  @media screen and (max-width: $break-two)
+    @content
+
+@mixin break-two
+  @media screen and (min-width: $break-two)
+    @content
+
+@mixin break-three
+  @media screen and (min-width: $break-three)
+    @content
+
+@mixin break-four
+  @media screen and (min-width: $break-four)
+    @content
+
+=transformation($what, $s, $method)
+  -ms-transform: $what $s $method
+  -o-transform: $what $s $method
+  -webkit-transition: $what $s $method
+  -moz-transition: $what $s $method
+  transition: $what $s $method
+
+=scaleTransform($size)
+  -webkit-transform: scale($size)
+  -moz-transform: scale($size)
+  -ms-transform: scale($size)
+  -o-transform: scale($size)
+  transform: scale($size)
+
+=transfromSkewx($what)
+  -ms-transform: skewX(-20deg)
+  -o-transform: skewX(-20deg)
+  -webkit-transition: skewX(-20deg)
+  -moz-transition: skewX(-20deg)
+  transition: skewX(-20deg)
+
+=shineKeyFrames()
+  from
+    left: -(70%)
+    opacity: 1
+  to
+    opacity: 1
+    left: 170%
+
+*
+  margin: 0
+  padding: 0
+  border: 0
+  box-sizing: border-box
+
+=font_text()
+  font-size: $font_size_text
+  @include break-three
+    font-size: $font_size_text_medium
+  @include break-four
+    font-size: $font_size_text_big
+
+.clear
+  clear: both
+
+.right
+  float: right
+
+.left
+  float: left
+
+.smartphone
+  @include break-two
+    display: none
+
+.tablet
+  display: none
+  @include break-two
+    display: block
+
+body
+  background-color: $background_color
+  font: $font_size_text $textFont, sans-serif
+  /*background: url(/images/wallpaper.png) repeat
+  color: $text-color
+  text-align: center
+  @include break-two
+    font-size: $font_size_text_medium
+  @include break-four
+    font-size: $font_size_text_big
+
+.wrapper
+  max-width: $break-four
+  width: 100%
+  text-align: left
+  margin-left: auto
+  margin-right: auto
+
+header
+  background-color: $light_blue
+  height: $footer_nav_size
+
+  @include break-three
+    height: $footer_nav_size_medium
+  @include break-four
+    height: $footer_nav_size_big
+
+  .wrapper
+    height: inherit
+    align-items: center
+    flex-direction: row
+    justify-content: space-between
+    display: flex
+  .tablet
+    height: inherit
+    align-items: center
+    flex-direction: row
+    justify-content: space-between
+    @include break-two
+      display: flex
+  .right
+    margin-right: 10px
+  span, div
+    display: flex
+    align-items: center
+    flex-direction: row
+
+#navigation_logo
+  background-image: url("../img/logo.png")
+  background-size: contain
+  background-repeat: no-repeat
+  width: 60px
+  height: 60px
+  margin: 0 10px 0 10px
+
+  @include break-two
+    width: 90px
+    height: 90px
+    margin: 0 10px 0 10px
+  @include break-four
+    width: 120px
+    height: 120px
+    margin: 0 10px 0 0
+
+#navigation_title
+  font-family: $title
+  font-size: $font_size_title
+  font-weight: 100
+  @include break-three
+    font-size: $font_size_title_medium
+  @include break-four
+    font-size: $font_size_title_big
+
+nav
+  margin-right: 10px
+  .background-circle
+    float: left
+  ul
+    list-style: none
+  li
+    display: inline-block
+  a
+    color: #4C9CF1
+    text-decoration: none
+
+
+@include small-screen
+  nav
+    span
+      font-size: 1.5em
+    a
+      background-color: #353535
+      width: 100%
+      padding: 10px
+      align-items: center
+      flex-direction: row
+      display: flex
+      span.smartphone
+        margin-left: 10px
+    > .smartphone
+      background-color: #353535
+      padding: 10px
+    .background-circle
+      float: left
+    > span
+    &:not(:target) > span:first-of-type
+      display: flex
+    &:target
+      > span:last-of-type, > ul
+        display: flex
+    > ul
+      height: auto
+      display: none
+      position: absolute
+      left: 0
+      right: 0
+    > ul > li
+      width: 100%
+      float: none
+      display: flex
+      border-bottom: $light_blue solid 1px
+    > ul > li:last-child
+      border-bottom: none!important
+    li ul
+      position: static
+
+
+
+.navigation_icon
+  width: 25px
+  height: 25px
+  background-size: contain
+  background-repeat: no-repeat
+
+.home_logo
+  background-image: $home_icon
+
+.members_logo
+  background-image: $team_icon
+
+.facebook_logo
+  background-image: $facebook_icon
+
+.twitch_logo
+  background-image: $twitch_icon
+
+.discord_logo
+  background-image: $disord_icon
+
+.youtube_logo
+  background-image: $youtube_icon
+
+.background-circle
+  display: flex
+  align-items: center
+  flex-direction: row
+  justify-content: center
+  border-radius: 50%
+  background-color: #2176AD
+  width: 45px
+  height: 45px
+  margin: 0 0 0 5px
+
+  @include break-four
+    height: 60px
+    width: 60px
+    margin: 0 0 0 10px
+
+header
+  border-bottom: solid white 2px
+
+main .wrapper
+  background-color: $background_color
+
+.main_icon
+  background-size: contain
+  background-repeat: no-repeat
+  margin: 0 10px 0 0
+  display: block
+  width: 55px
+  height: 55px
+  @include break-two
+    width: 80px
+    height: 80px
+  @include break-four
+    width: 100px
+    height: 100px
+
+.hots_icon
+  background-image: $hots_icon
+
+#introduction_title
+  font-family: $font_size_title
+  letter-spacing: 2px
+  font-weight: 100
+  color: $light_blue
+  display: flex
+  align-items: center
+  flex-direction: row
+  justify-content: center
+  font-size: $font_size_h
+  padding: 20px 0 0 0
+  @include break-three
+    padding: 30px 0 0 0
+    font-size: $font_size_h_medium
+  @include break-four
+    padding: 50px 0 0 0
+    font-size: $font_size_h_big
+
+.player_introduction
+  #introduction_title
+    flex-direction: column !important
+  .player_tag
+    font-size: $font_size_h
+    margin-bottom: 10px
+  .member_img
+    width: 150px
+    height: 150px
+    border-radius: 50%
+    background-size: contain
+    background-repeat: no-repeat
+  @include break-two
+    .player_tag
+      font-size: $font_size_h-medium
+      margin-bottom: 15px
+    .member_img
+      width: 200px
+      height: 200px
+  @include break-three
+
+  @include break-four
+    .member_img
+      width: 300px
+      height: 300px
+    .player_tag
+      margin-bottom: 20px
+      font-size: $font_size_h-big
+
+.player_stats
+  span
+    span
+      +font_text()
+
+#player_informations
+  .player_info
+    display: flex
+    flex-direction: column
+
+#introduction span
+  vertical-align: middle
+  display: flex
+  align-items: center
+  text-align: center
+
+#member_introduction
+  letter-spacing: 1px
+  font-weight: 100
+  color: $light_blue
+  display: block
+  margin: auto auto
+  align-items: center
+  flex-direction: row
+  justify-content: center
+  max-width: 80%
+
+#member_introduction
+  padding: 10px 0 0 0
+  span
+    display: inherit
+    color: white
+    padding: 10px 0 0 0
+    +font_text
+    @include break-three
+      padding: 20px 0 0 0
+    @include break-four
+      padding: 30px 0 0 0
+
+
+#big_members_container
+  margin: 30px 0
+  padding: 10px 0
+  @include break-two
+    display: flex
+    flex-flow: row wrap
+    justify-content: space-evenly
+    text-align: center
+
+.member_container
+  color: $light_blue
+  margin: 20px auto
+  border: 1px solid white
+  border-radius: 10px
+  width: 250px
+
+  .wrapper
+    background: #333
+    padding: 30px 0
+    display: inline-block
+    border-radius: 10px
+  .member_stats
+    width: 100%
+    display: flex
+    flex-direction: column
+    align-items: center
+    .member_info
+      display: flex
+      flex-direction: column
+      align-items: center
+      margin-top: 10px
+    .member_nickname
+      font-size: $font_size_h2
+    .member_img
+      width: 150px
+      height: 150px
+      border-radius: 50%
+      background-size: contain
+      background-repeat: no-repeat
+  .member_main_heroes
+    display: flex
+    flex-direction: column
+    align-items: center
+    .title
+      margin-bottom: 10px
+      font-size: $font_size_h2
+    .sprites
+      display: flex
+      flex-direction: row
+      align-items: center
+      /*justify-content: space-between
+      .sprite
+        margin-right: 10px
+        &:first-child
+          margin-left: 10px
+  @include break-two
+    float: left
+    margin: 20px 15px
+    border-radius: 10px
+    position: relative
+    display: inline-block
+    +transformation(all, 0.2s, ease-in)
+    &:after
+      content: ""
+      box-shadow: 0 0 60px 0 rgba(0, 199, 236, 0.7)
+      border-radius: 10px
+      position: absolute
+      top: 0
+      left: 0
+      width: 100%
+      height: 100%
+      opacity: 0
+      +transformation(opacity, 0.2s, ease-in)
+    .wrapper
+      margin: 0
+      padding: 30px 0
+      border-radius: 10px
+      overflow: hidden
+      position: relative
+      +transformation(all, 0.2s, ease-in)
+      &:before
+        content: ""
+        display: block
+        width: 0px
+        height: 110%
+        position: absolute
+        top: 0
+        left: 0%
+        opacity: 0
+        background: white
+        box-shadow: 0 0 15px 4px white
+        -webkit-transform: skewX(142deg)
+        -moz-transform: skewX(142deg)
+        -ms-transform: skewX(142deg)
+        -o-transform: skewX(142deg)
+        transform: skewX(142deg)
+      .member_stats
+        .member_img
+          border: 2px solid #333
+          +transformation(border, 0.2s, ease-in)
+    &:hover
+      cursor: pointer
+      color: white
+      border: 1px solid $light_blue
+      +transformation(all, 0.2s, ease-out)
+      background-color: $light_blue
+      +scaleTransform(1.05)
+      z-index: 100
+      .wrapper
+        background: $light_blue
+        +transformation(all, 0.2s, ease-out)
+        .member_stats
+          .member_img
+            border: 2px solid white
+            +transformation(all, 0.2s, ease-out)
+        &:before
+          -webkit-animation: shine 1s 0s ease-in-out
+          -moz-animation: shine 1s 0s ease-in-out
+          animation: shine 1s 0s ease-in-out
+      &:after
+        opacity: 1
+        +transformation(opacity, 0.2s, ease-in)
+    &:active:after
+      box-shadow: 0 0 0 0 transparent
+      -webkit-transition: box-shadow 0.2s ease-in
+      -moz-transition: box-shadow 0.2s ease-in
+      transition: box-shadow 0.2s ease-in
+      .member_info
+        margin-top: 20px
+    .member_main_heroes
+      .title
+        margin-bottom: 20px
+    /*.wraper:before
+      content: ""
+      display: block
+      width: 0px
+      height: 110%
+      position: absolute
+      top: 0
+      left: 0%
+      opacity: 0
+      background: white
+      box-shadow: 0 0 15px 4px white
+      -webkit-transform: skewX(142deg)
+      -moz-transform: skewX(142deg)
+      -ms-transform: skewX(142deg)
+      -o-transform: skewX(142deg)
+      transform: skewX(142deg)
+  @include break-three
+    width: 350px
+    margin: 20px 4px
+    .member_stats
+      .member_img
+        width: 200px
+        height: 200px
+
+  @include break-four
+    width: 500px
+
+/*profile pictures
+.ashowl_icon
+  background-image: $ashowl_icon
+
+footer
+  background: $light_blue
+  height: 100px
+  width: 100%
+  border-top: white 2px solid
+
+
+
+@-webkit-keyframes shine
+  +shineKeyFrames()
+
+
+@-moz-keyframes shine
+  +shineKeyFrames()
+
+
+@keyframes shine
+  +shineKeyFrames()
+
+/*.shiny
+  display: inline-block
+  position: relative
+  text-align: center
+  color: #00c7ec
+  border: 1px solid #00c7ec
+  border-radius: 5px
+  line-height: 3em
+  padding-left: 5em
+  padding-right: 5em
+  box-shadow: 0 0 0 0 transparent
+  -webkit-transition: all 0.2s ease-in
+  -moz-transition: all 0.2s ease-in
+  transition: all 0.2s ease-in
+  &:hover
+  color: white
+  box-shadow: 0 0 30px 0 rgba(0, 199, 236, 0.5)
+  background-color: #00c7ec
+  -webkit-transition: all 0.2s ease-out
+  -moz-transition: all 0.2s ease-out
+  transition: all 0.2s ease-out
+  &:before
+  -webkit-animation: shine 0.5s 0s linear
+  -moz-animation: shine 0.5s 0s linear
+  animation: shine 0.5s 0s linear
+  &:active
+  box-shadow: 0 0 0 0 transparent
+  -webkit-transition: box-shadow 0.2s ease-in
+  -moz-transition: box-shadow 0.2s ease-in
+  transition: box-shadow 0.2s ease-in
+  &:before
+  content: ""
+  display: block
+  width: 0px
+  height: 86%
+  position: absolute
+  top: 7%
+  left: 0%
+  opacity: 0
+  background: white
+  box-shadow: 0 0 15px 3px white
+  -webkit-transform: skewX(-20deg)
+  -moz-transform: skewX(-20deg)
+  -ms-transform: skewX(-20deg)
+  -o-transform: skewX(-20deg)
+  transform: skewX(-20deg)
