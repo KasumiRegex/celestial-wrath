@@ -1,0 +1,250 @@
+/* overwatch icons http://overwatch.gamepedia.com/Heroes */
+.sprite {
+  background-image: url(../img/overwatch_spritesheet_small.png);
+  background-repeat: no-repeat;
+  display: block; }
+  @media screen and (min-width: 65em) {
+    .sprite {
+      background-image: url(../img/overwatch_spritesheet_medium.png); } }
+  @media screen and (min-width: 80em) {
+    .sprite {
+      background-image: url(../img/overwatch_spritesheet.png); } }
+
+.overwatch_icon, .sprite-Icon-Junkrat, .sprite-Icon-Lucio, .sprite-Icon-Roadhog, .sprite-Icon-Soldier76, .sprite-Icon-ana, .sprite-Icon-bastion, .sprite-Icon-doomfist, .sprite-Icon-dva, .sprite-Icon-genji, .sprite-Icon-hanzo, .sprite-Icon-mccree, .sprite-Icon-mei, .sprite-Icon-mercy, .sprite-Icon-orisa, .sprite-Icon-pharah, .sprite-Icon-reaper, .sprite-Icon-reinhardt, .sprite-Icon-sombra, .sprite-Icon-symmetra, .sprite-Icon-torbjorn, .sprite-Icon-tracer, .sprite-Icon-widowmaker, .sprite-Icon-winston, .sprite-Icon-zarya, .sprite-Icon-zenyatta {
+  width: 50px;
+  height: 50px; }
+  @media screen and (min-width: 65em) {
+    .overwatch_icon, .sprite-Icon-Junkrat, .sprite-Icon-Lucio, .sprite-Icon-Roadhog, .sprite-Icon-Soldier76, .sprite-Icon-ana, .sprite-Icon-bastion, .sprite-Icon-doomfist, .sprite-Icon-dva, .sprite-Icon-genji, .sprite-Icon-hanzo, .sprite-Icon-mccree, .sprite-Icon-mei, .sprite-Icon-mercy, .sprite-Icon-orisa, .sprite-Icon-pharah, .sprite-Icon-reaper, .sprite-Icon-reinhardt, .sprite-Icon-sombra, .sprite-Icon-symmetra, .sprite-Icon-torbjorn, .sprite-Icon-tracer, .sprite-Icon-widowmaker, .sprite-Icon-winston, .sprite-Icon-zarya, .sprite-Icon-zenyatta {
+      width: 75px;
+      height: 75px; } }
+  @media screen and (min-width: 80em) {
+    .overwatch_icon, .sprite-Icon-Junkrat, .sprite-Icon-Lucio, .sprite-Icon-Roadhog, .sprite-Icon-Soldier76, .sprite-Icon-ana, .sprite-Icon-bastion, .sprite-Icon-doomfist, .sprite-Icon-dva, .sprite-Icon-genji, .sprite-Icon-hanzo, .sprite-Icon-mccree, .sprite-Icon-mei, .sprite-Icon-mercy, .sprite-Icon-orisa, .sprite-Icon-pharah, .sprite-Icon-reaper, .sprite-Icon-reinhardt, .sprite-Icon-sombra, .sprite-Icon-symmetra, .sprite-Icon-torbjorn, .sprite-Icon-tracer, .sprite-Icon-widowmaker, .sprite-Icon-winston, .sprite-Icon-zarya, .sprite-Icon-zenyatta {
+      width: 100px;
+      height: 100px; } }
+
+.sprite-Icon-Junkrat {
+  background-position: -2.5px -2.5px; }
+  @media screen and (min-width: 65em) {
+    .sprite-Icon-Junkrat {
+      background-position: -4px -4px; } }
+  @media screen and (min-width: 80em) {
+    .sprite-Icon-Junkrat {
+      background-position: -5px -5px; } }
+
+.sprite-Icon-Lucio {
+  background-position: -63.5px -2.5px; }
+  @media screen and (min-width: 65em) {
+    .sprite-Icon-Lucio {
+      background-position: -96px -4px; } }
+  @media screen and (min-width: 80em) {
+    .sprite-Icon-Lucio {
+      background-position: -127px -5px; } }
+
+.sprite-Icon-Roadhog {
+  background-position: -124.5px -2.5px; }
+  @media screen and (min-width: 65em) {
+    .sprite-Icon-Roadhog {
+      background-position: -187px -4px; } }
+  @media screen and (min-width: 80em) {
+    .sprite-Icon-Roadhog {
+      background-position: -249px -5px; } }
+
+.sprite-Icon-Soldier76 {
+  background-position: -185.5px -2.5px; }
+  @media screen and (min-width: 65em) {
+    .sprite-Icon-Soldier76 {
+      background-position: -279px -4px; } }
+  @media screen and (min-width: 80em) {
+    .sprite-Icon-Soldier76 {
+      background-position: -371px -5px; } }
+
+.sprite-Icon-ana {
+  background-position: -2.5px -57.5px; }
+  @media screen and (min-width: 65em) {
+    .sprite-Icon-ana {
+      background-position: -4px -87px; } }
+  @media screen and (min-width: 80em) {
+    .sprite-Icon-ana {
+      background-position: -5px -115px; } }
+
+.sprite-Icon-bastion {
+  background-position: -63.5px -57.5px; }
+  @media screen and (min-width: 65em) {
+    .sprite-Icon-bastion {
+      background-position: -96px -87px; } }
+  @media screen and (min-width: 80em) {
+    .sprite-Icon-bastion {
+      background-position: -127px -115px; } }
+
+.sprite-Icon-doomfist {
+  background-position: -124.5px -57.5px; }
+  @media screen and (min-width: 65em) {
+    .sprite-Icon-doomfist {
+      background-position: -187px -87px; } }
+  @media screen and (min-width: 80em) {
+    .sprite-Icon-doomfist {
+      background-position: -249px -115px; } }
+
+.sprite-Icon-dva {
+  background-position: -185.5px -57.5px; }
+  @media screen and (min-width: 65em) {
+    .sprite-Icon-dva {
+      background-position: -279px -87px; } }
+  @media screen and (min-width: 80em) {
+    .sprite-Icon-dva {
+      background-position: -371px -115px; } }
+
+.sprite-Icon-genji {
+  background-position: -2.5px -112.5px; }
+  @media screen and (min-width: 65em) {
+    .sprite-Icon-genji {
+      background-position: -4px -169px; } }
+  @media screen and (min-width: 80em) {
+    .sprite-Icon-genji {
+      background-position: -5px -225px; } }
+
+.sprite-Icon-hanzo {
+  background-position: -63.5px -112.5px; }
+  @media screen and (min-width: 65em) {
+    .sprite-Icon-hanzo {
+      background-position: -96px -169px; } }
+  @media screen and (min-width: 80em) {
+    .sprite-Icon-hanzo {
+      background-position: -127px -225px; } }
+
+.sprite-Icon-mccree {
+  background-position: -124.5px -112.5px; }
+  @media screen and (min-width: 65em) {
+    .sprite-Icon-mccree {
+      background-position: -187px -169px; } }
+  @media screen and (min-width: 80em) {
+    .sprite-Icon-mccree {
+      background-position: -249px -225px; } }
+
+.sprite-Icon-mei {
+  background-position: -185.5px -112.5px; }
+  @media screen and (min-width: 65em) {
+    .sprite-Icon-mei {
+      background-position: -279px -169px; } }
+  @media screen and (min-width: 80em) {
+    .sprite-Icon-mei {
+      background-position: -371px -225px; } }
+
+.sprite-Icon-mercy {
+  background-position: -2.5px -167.5px; }
+  @media screen and (min-width: 65em) {
+    .sprite-Icon-mercy {
+      background-position: -4px -252px; } }
+  @media screen and (min-width: 80em) {
+    .sprite-Icon-mercy {
+      background-position: -5px -335px; } }
+
+.sprite-Icon-orisa {
+  background-position: -63.5px -167.5px; }
+  @media screen and (min-width: 65em) {
+    .sprite-Icon-orisa {
+      background-position: -96px -252px; } }
+  @media screen and (min-width: 80em) {
+    .sprite-Icon-orisa {
+      background-position: -127px -335px; } }
+
+.sprite-Icon-pharah {
+  background-position: -124.5px -167.5px; }
+  @media screen and (min-width: 65em) {
+    .sprite-Icon-pharah {
+      background-position: -187px -252px; } }
+  @media screen and (min-width: 80em) {
+    .sprite-Icon-pharah {
+      background-position: -249px -335px; } }
+
+.sprite-Icon-reaper {
+  background-position: -185.5px -167.5px; }
+  @media screen and (min-width: 65em) {
+    .sprite-Icon-reaper {
+      background-position: -279px -252px; } }
+  @media screen and (min-width: 80em) {
+    .sprite-Icon-reaper {
+      background-position: -371px -335px; } }
+
+.sprite-Icon-reinhardt {
+  background-position: -2.5px -222.5px; }
+  @media screen and (min-width: 65em) {
+    .sprite-Icon-reinhardt {
+      background-position: -4px -335px; } }
+  @media screen and (min-width: 80em) {
+    .sprite-Icon-reinhardt {
+      background-position: -5px -445px; } }
+
+.sprite-Icon-sombra {
+  background-position: -63.5px -222.5px; }
+  @media screen and (min-width: 65em) {
+    .sprite-Icon-sombra {
+      background-position: -96px -335px; } }
+  @media screen and (min-width: 80em) {
+    .sprite-Icon-sombra {
+      background-position: -127px -445px; } }
+
+.sprite-Icon-symmetra {
+  background-position: -124.5px -222.5px; }
+  @media screen and (min-width: 65em) {
+    .sprite-Icon-symmetra {
+      background-position: -187px -335px; } }
+  @media screen and (min-width: 80em) {
+    .sprite-Icon-symmetra {
+      background-position: -249px -445px; } }
+
+.sprite-Icon-torbjorn {
+  background-position: -185.5px -222.5px; }
+  @media screen and (min-width: 65em) {
+    .sprite-Icon-torbjorn {
+      background-position: -279px -335px; } }
+  @media screen and (min-width: 80em) {
+    .sprite-Icon-torbjorn {
+      background-position: -371px -445px; } }
+
+.sprite-Icon-tracer {
+  background-position: -246.5px -2.5px; }
+  @media screen and (min-width: 65em) {
+    .sprite-Icon-tracer {
+      background-position: -371px -4px; } }
+  @media screen and (min-width: 80em) {
+    .sprite-Icon-tracer {
+      background-position: -493px -5px; } }
+
+.sprite-Icon-widowmaker {
+  background-position: -246.5px -57.5px; }
+  @media screen and (min-width: 65em) {
+    .sprite-Icon-widowmaker {
+      background-position: -371px -87px; } }
+  @media screen and (min-width: 80em) {
+    .sprite-Icon-widowmaker {
+      background-position: -493px -115px; } }
+
+.sprite-Icon-winston {
+  background-position: -246.5px -112.5px; }
+  @media screen and (min-width: 65em) {
+    .sprite-Icon-winston {
+      background-position: -371px -169px; } }
+  @media screen and (min-width: 80em) {
+    .sprite-Icon-winston {
+      background-position: -493px -225px; } }
+
+.sprite-Icon-zarya {
+  background-position: -246.5px -167.5px; }
+  @media screen and (min-width: 65em) {
+    .sprite-Icon-zarya {
+      background-position: -371px -252px; } }
+  @media screen and (min-width: 80em) {
+    .sprite-Icon-zarya {
+      background-position: -493px -335px; } }
+
+.sprite-Icon-zenyatta {
+  background-position: -246.5px -222.5px; }
+  @media screen and (min-width: 65em) {
+    .sprite-Icon-zenyatta {
+      background-position: -371px -335px; } }
+  @media screen and (min-width: 80em) {
+    .sprite-Icon-zenyatta {
+      background-position: -493px -445px; } }
+
+/*# sourceMappingURL=overwatch_icons.css.map */
