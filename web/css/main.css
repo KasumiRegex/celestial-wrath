@@ -110,7 +110,7 @@ header {
 
 #navigation_title {
   font-family: lexio;
-  font-size: 1.6em;
+  font-size: 1.3em;
   font-weight: 100; }
   @media screen and (min-width: 65em) {
     #navigation_title {
@@ -172,6 +172,9 @@ nav {
   height: 25px;
   background-size: contain;
   background-repeat: no-repeat; }
+  .navigation_icon svg {
+    height: inherit;
+    width: inherit; }
 
 .home_logo {
   background-image: url("../img/home.svg"); }
@@ -198,9 +201,46 @@ nav {
   justify-content: center;
   border-radius: 50%;
   background-color: #2176AD;
+  border: 3px solid #2176AD;
   width: 45px;
   height: 45px;
-  margin: 0 0 0 5px; }
+  margin: 0 0 0 5px;
+  -ms-transform: all 0.2s ease-in;
+  -o-transform: all 0.2s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in; }
+  .background-circle svg path {
+    fill: #49B7FF; }
+  @media screen and (min-width: 65em) {
+    .background-circle {
+      position: relative; }
+      .background-circle:hover {
+        border-color: #dfdfdf;
+        background-color: #11669D; }
+        .background-circle:hover svg path {
+          fill: #dfdfdf; }
+      .background-circle:before {
+        content: "";
+        position: absolute;
+        border: solid 4px;
+        border-color: #2176AD;
+        border-radius: 50px;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        -webkit-animation-duration: 0.8s;
+        animation-duration: 0.8s;
+        -ms-transform: all 0.2s ease-in;
+        -o-transform: all 0.2s ease-in;
+        -webkit-transition: all 0.2s ease-in;
+        -moz-transition: all 0.2s ease-in;
+        transition: all 0.2s ease-in; }
+      .background-circle:hover:before, .background-circle:focus:before {
+        border-color: #11669D;
+        -webkit-animation-name: ripple-out;
+        animation-name: ripple-out; } }
   @media screen and (min-width: 76em) {
     .background-circle {
       height: 60px;
@@ -233,7 +273,7 @@ main .wrapper {
   background-image: url("../img/heroes_icon.png"); }
 
 #introduction_title {
-  font-family: 1.6em;
+  font-family: 1.3em;
   letter-spacing: 2px;
   font-weight: 100;
   color: #49B7FF;
@@ -241,7 +281,7 @@ main .wrapper {
   align-items: center;
   flex-direction: row;
   justify-content: center;
-  font-size: 1.5em;
+  font-size: 1.3em;
   padding: 20px 0 0 0; }
   @media screen and (min-width: 65em) {
     #introduction_title {
@@ -255,7 +295,7 @@ main .wrapper {
 .player_introduction #introduction_title {
   flex-direction: column !important; }
 .player_introduction .player_tag {
-  font-size: 1.5em;
+  font-size: 1.3em;
   margin-bottom: 10px; }
 .player_introduction .member_img {
   width: 150px;
@@ -360,7 +400,8 @@ main .wrapper {
       align-items: center;
       margin-top: 10px; }
     .member_container .member_stats .member_nickname {
-      font-size: 1.5em; }
+      font-size: 1.3em;
+      font-style: italic; }
     .member_container .member_stats .member_img {
       width: 150px;
       height: 150px;
@@ -373,7 +414,7 @@ main .wrapper {
     align-items: center; }
     .member_container .member_main_heroes .title {
       margin-bottom: 10px;
-      font-size: 1.5em; }
+      font-size: 1.3em; }
     .member_container .member_main_heroes .sprites {
       display: flex;
       flex-direction: row;
@@ -552,51 +593,51 @@ footer {
   to {
     opacity: 1;
     left: 170%; } }
-/*.shiny
- * display: inline-block
+@-moz-keyframes ripple-out {
+  100% {
+    top: -15px;
+    right: -15px;
+    bottom: -15px;
+    left: -15px; } }
+@-webkit-keyframes ripple-out {
+  100% {
+    top: -15px;
+    right: -15px;
+    bottom: -15px;
+    left: -15px;
+    opacity: 0; } }
+@keyframes ripple-out {
+  100% {
+    top: -15px;
+    right: -15px;
+    bottom: -15px;
+    left: -15px;
+    opacity: 0; } }
+/*.ripple-out
+ * //display: inline-block
+ * vertical-align: middle
+ * -webkit-transform: translateZ(0)
+ * transform: translateZ(0)
+ * box-shadow: 0 0 1px rgba(0, 0, 0, 0)
+ * -webkit-backface-visibility: hidden
+ * backface-visibility: hidden
+ * -moz-osx-font-smoothing: grayscale
  * position: relative
- * text-align: center
- * color: #00c7ec
- * border: 1px solid #00c7ec
- * border-radius: 5px
- * line-height: 3em
- * padding-left: 5em
- * padding-right: 5em
- * box-shadow: 0 0 0 0 transparent
- * -webkit-transition: all 0.2s ease-in
- * -moz-transition: all 0.2s ease-in
- * transition: all 0.2s ease-in
- * &:hover
- * color: white
- * box-shadow: 0 0 30px 0 rgba(0, 199, 236, 0.5)
- * background-color: #00c7ec
- * -webkit-transition: all 0.2s ease-out
- * -moz-transition: all 0.2s ease-out
- * transition: all 0.2s ease-out
+ * z-index: 2
  * &:before
- * -webkit-animation: shine 0.5s 0s linear
- * -moz-animation: shine 0.5s 0s linear
- * animation: shine 0.5s 0s linear
- * &:active
- * box-shadow: 0 0 0 0 transparent
- * -webkit-transition: box-shadow 0.2s ease-in
- * -moz-transition: box-shadow 0.2s ease-in
- * transition: box-shadow 0.2s ease-in
- * &:before
- * content: ""
- * display: block
- * width: 0px
- * height: 86%
- * position: absolute
- * top: 7%
- * left: 0%
- * opacity: 0
- * background: white
- * box-shadow: 0 0 15px 3px white
- * -webkit-transform: skewX(-20deg)
- * -moz-transform: skewX(-20deg)
- * -ms-transform: skewX(-20deg)
- * -o-transform: skewX(-20deg)
- * transform: skewX(-20deg) */
+ *   content: ''
+ *   position: absolute
+ *   border: #21760D solid 6px
+ *   border-radius: 50px
+ *   top: 0
+ *   right: 0
+ *   bottom: 0
+ *   left: 0
+ *   -webkit-animation-duration: 0.8s
+ *   animation-duration: 0.8s
+ *   z-index: 1
+ * &:hover:before, &:focus:before, &:active:before
+ *   -webkit-animation-name: ripple-out
+ *   animation-name: ripple-out */
 
 /*# sourceMappingURL=main.css.map */

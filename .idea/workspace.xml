@@ -2,8 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8cbccff2-09f6-4d8d-a89e-5144addc27f5" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/img/profile_pictures/Twitch_icon.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/img/profile_pictures/iconmonstr-twitch-1.svg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/css/main.css" afterPath="$PROJECT_DIR$/web/css/main.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/css/main.css.map" afterPath="$PROJECT_DIR$/web/css/main.css.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/css/main.sass" afterPath="$PROJECT_DIR$/web/css/main.sass" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/home.html" afterPath="$PROJECT_DIR$/web/home.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/img/home.svg" afterPath="$PROJECT_DIR$/web/img/home.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/player.html" afterPath="$PROJECT_DIR$/web/player.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/team.html" afterPath="$PROJECT_DIR$/web/team.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -23,9 +31,27 @@
             <file leaf-file-name="main.sass" pinned="false" current-in-tab="true">
               <entry file="file://$PROJECT_DIR$/web/css/main.sass">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="681">
-                    <caret line="349" column="21" lean-forward="false" selection-start-line="349" selection-start-column="21" selection-end-line="349" selection-end-column="21" />
+                  <state relative-caret-position="595">
+                    <caret line="47" column="17" lean-forward="true" selection-start-line="47" selection-start-column="17" selection-end-line="47" selection-end-column="17" />
                     <folding />
+                  </state>
+                </provider>
+              </entry>
+            </file>
+            <file leaf-file-name="player.html" pinned="false" current-in-tab="false">
+              <entry file="file://$PROJECT_DIR$/web/player.html">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state relative-caret-position="118">
+                    <caret line="17" column="17" lean-forward="true" selection-start-line="17" selection-start-column="17" selection-end-line="20" selection-end-column="38" />
+                    <folding>
+                      <element signature="n#script#0;n#head#0;n#html#0;n#!!top" expanded="false" />
+                      <element signature="n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                      <element signature="n#style#0;n#svg#0;n#span#0;n#span#0;n#a#0;n#li#0;n#ul#0;n#nav#0;n#span#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                      <element signature="n#style#0;n#svg#0;n#span#0;n#span#0;n#a#0;n#li#1;n#ul#0;n#nav#0;n#span#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                      <element signature="n#style#0;n#svg#0;n#span#0;n#span#0;n#a#0;n#li#2;n#ul#0;n#nav#0;n#span#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                      <element signature="n#style#0;n#svg#0;n#span#0;n#span#0;n#a#0;n#li#5;n#ul#0;n#nav#0;n#span#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                      <element signature="n#style#0;n#polygon#0;n#svg#0;n#span#0;n#span#0;n#a#0;n#li#5;n#ul#0;n#nav#0;n#span#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                    </folding>
                   </state>
                 </provider>
               </entry>
@@ -48,13 +74,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/js/app.js">
+      <file leaf-file-name="team.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/team.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="7" column="35" lean-forward="false" selection-start-line="7" selection-start-column="35" selection-end-line="7" selection-end-column="35" />
+            <state relative-caret-position="136">
+              <caret line="8" column="63" lean-forward="true" selection-start-line="7" selection-start-column="34" selection-end-line="8" selection-end-column="63" />
               <folding>
-                <element signature="e#0#43#0" expanded="false" />
+                <element signature="n#script#0;n#head#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#svg#0;n#span#0;n#span#0;n#a#0;n#li#0;n#ul#0;n#nav#0;n#span#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#style#0;n#svg#0;n#span#0;n#span#0;n#a#0;n#li#0;n#ul#0;n#nav#0;n#span#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#svg#0;n#span#0;n#span#0;n#a#0;n#li#1;n#ul#0;n#nav#0;n#span#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#svg#0;n#span#0;n#span#0;n#a#0;n#li#1;n#ul#0;n#nav#0;n#span#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#span#0;n#span#0;n#a#0;n#li#2;n#ul#0;n#nav#0;n#span#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#style#0;n#svg#0;n#span#0;n#span#0;n#a#0;n#li#2;n#ul#0;n#nav#0;n#span#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#svg#0;n#span#0;n#span#0;n#a#0;n#li#4;n#ul#0;n#nav#0;n#span#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#svg#0;n#span#0;n#span#0;n#a#0;n#li#5;n#ul#0;n#nav#0;n#span#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#style#0;n#svg#0;n#span#0;n#span#0;n#a#0;n#li#5;n#ul#0;n#nav#0;n#span#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#polygon#0;n#svg#0;n#span#0;n#span#0;n#a#0;n#li#5;n#ul#0;n#nav#0;n#span#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -63,22 +100,9 @@
       <file leaf-file-name="home.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/home.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="64" lean-forward="false" selection-start-line="7" selection-start-column="64" selection-end-line="7" selection-end-column="64" />
+            <state relative-caret-position="391">
+              <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="player.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/player.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="19" column="14" lean-forward="false" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
-              <folding>
-                <element signature="n#script#0;n#head#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -96,13 +120,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>main_home</find>
-      <find>white</find>
-      <find>div</find>
-      <find>nav</find>
-      <find>member_container</find>
-      <find>float</find>
-      <find>padding</find>
       <find>skewX</find>
       <find>142$de</find>
       <find>shineKeyFrames</find>
@@ -126,6 +143,13 @@
       <find>#member_introduction</find>
       <find>player</find>
       <find>&lt;!--</find>
+      <find>nav</find>
+      <find>hvr</find>
+      <find>background-circle</find>
+      <find>home_logo</find>
+      <find>t</find>
+      <find>5324427</find>
+      <find>active</find>
     </findStrings>
     <replaceStrings>
       <replace>@extend .sprite-Icon-Junkrat</replace>
@@ -136,6 +160,7 @@
       <replace>$break-four</replace>
       <replace>break-four</replace>
       <replace>&lt;div class=&quot;member_container&quot; onclick=&quot;window.location = 'player.html';&quot;&gt;</replace>
+      <replace>$ripple_distance</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -151,10 +176,12 @@
         <option value="$PROJECT_DIR$/web/css/desktop.sass" />
         <option value="$PROJECT_DIR$/web/css/overwatch_icons.sass" />
         <option value="$PROJECT_DIR$/web/index.html" />
-        <option value="$PROJECT_DIR$/web/player.html" />
-        <option value="$PROJECT_DIR$/web/css/main.sass" />
+        <option value="$PROJECT_DIR$/web/img/home.svg" />
+        <option value="$PROJECT_DIR$/web/img/profile_pictures/Twitch_icon.svg" />
         <option value="$PROJECT_DIR$/web/team.html" />
+        <option value="$PROJECT_DIR$/web/player.html" />
         <option value="$PROJECT_DIR$/web/home.html" />
+        <option value="$PROJECT_DIR$/web/css/main.sass" />
       </list>
     </option>
   </component>
@@ -379,12 +406,12 @@
       <workItem from="1509692149079" duration="8980000" />
       <workItem from="1509706951397" duration="6538000" />
       <workItem from="1509724908023" duration="324000" />
-      <workItem from="1510235501335" duration="234000" />
+      <workItem from="1510235501335" duration="7679000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="86647000" />
+    <option name="totallyTimeSpent" value="94092000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="953" y="30" width="974" height="1057" extended-state="0" />
@@ -419,12 +446,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/web/img/members/dragoress.png" />
-    <entry file="file://$PROJECT_DIR$/web/img/members/dralur.png" />
-    <entry file="file://$PROJECT_DIR$/web/img/hots/chen.png" />
-    <entry file="file://$PROJECT_DIR$/web/img/hots/chromie.png" />
-    <entry file="file://$PROJECT_DIR$/web/img/hots/dehaka.png" />
-    <entry file="file://$PROJECT_DIR$/web/img/hots/dva.png" />
     <entry file="file://$PROJECT_DIR$/web/img/hots/etc.png" />
     <entry file="file://$PROJECT_DIR$/web/img/hots/genji.png" />
     <entry file="file://$PROJECT_DIR$/web/img/solar-system-light.svg">
@@ -432,18 +453,6 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/img/solar-system.svg">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/img/heroes_icon.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/css/style.css" />
@@ -459,6 +468,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -466,13 +476,6 @@
     <entry file="file://$PROJECT_DIR$/web/img/profile_pictures/ashowl.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/team.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="443">
-          <caret line="230" column="85" lean-forward="false" selection-start-line="230" selection-start-column="85" selection-end-line="230" selection-end-column="85" />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/css/desktop.css" />
@@ -552,25 +555,6 @@
     <entry file="file://$PROJECT_DIR$/web/img/pages/about/background3.png" />
     <entry file="file://$PROJECT_DIR$/web/img/pages/about/background2.png" />
     <entry file="file://$PROJECT_DIR$/web/img/pages/about/background.png" />
-    <entry file="file://$PROJECT_DIR$/web/img/discord.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/img/discord.svg">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/img/youtube.svg">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/img/overwatch_spritesheet.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -579,6 +563,88 @@
     <entry file="file://$PROJECT_DIR$/web/img/overwatch_spritesheet_medium.png">
       <provider selected="true" editor-type-id="images">
         <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/img/discord.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/img/heroes_icon.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/img/home.svg">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="19" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/img/team.svg">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="47" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/img/facebook.svg">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/img/solar-system.svg">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/img/discord.svg">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="30" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/img/youtube.svg">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="31" column="3" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/img/twitch.svg">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="241">
+          <caret line="23" column="19" lean-forward="false" selection-start-line="23" selection-start-column="19" selection-end-line="23" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/img/profile_pictures/Twitch_icon.svg">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="53" lean-forward="false" selection-start-line="3" selection-start-column="44" selection-end-line="3" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/img/profile_pictures/iconmonstr-twitch-1.svg">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="16" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="394" />
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/inspiration/inspiration.txt">
@@ -591,37 +657,63 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/js/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="7" column="35" lean-forward="false" selection-start-line="7" selection-start-column="35" selection-end-line="7" selection-end-column="35" />
+        <state relative-caret-position="119">
+          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
           <folding>
             <element signature="e#0#43#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/player.html">
+    <entry file="file://$PROJECT_DIR$/web/team.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="19" column="14" lean-forward="false" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
+        <state relative-caret-position="136">
+          <caret line="8" column="63" lean-forward="true" selection-start-line="7" selection-start-column="34" selection-end-line="8" selection-end-column="63" />
           <folding>
             <element signature="n#script#0;n#head#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#svg#0;n#span#0;n#span#0;n#a#0;n#li#0;n#ul#0;n#nav#0;n#span#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#svg#0;n#span#0;n#span#0;n#a#0;n#li#0;n#ul#0;n#nav#0;n#span#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#svg#0;n#span#0;n#span#0;n#a#0;n#li#1;n#ul#0;n#nav#0;n#span#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#svg#0;n#span#0;n#span#0;n#a#0;n#li#1;n#ul#0;n#nav#0;n#span#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#span#0;n#span#0;n#a#0;n#li#2;n#ul#0;n#nav#0;n#span#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#svg#0;n#span#0;n#span#0;n#a#0;n#li#2;n#ul#0;n#nav#0;n#span#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#svg#0;n#span#0;n#span#0;n#a#0;n#li#4;n#ul#0;n#nav#0;n#span#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#svg#0;n#span#0;n#span#0;n#a#0;n#li#5;n#ul#0;n#nav#0;n#span#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#svg#0;n#span#0;n#span#0;n#a#0;n#li#5;n#ul#0;n#nav#0;n#span#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#polygon#0;n#svg#0;n#span#0;n#span#0;n#a#0;n#li#5;n#ul#0;n#nav#0;n#span#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/player.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="118">
+          <caret line="17" column="17" lean-forward="true" selection-start-line="17" selection-start-column="17" selection-end-line="20" selection-end-column="38" />
+          <folding>
+            <element signature="n#script#0;n#head#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#svg#0;n#span#0;n#span#0;n#a#0;n#li#0;n#ul#0;n#nav#0;n#span#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#svg#0;n#span#0;n#span#0;n#a#0;n#li#1;n#ul#0;n#nav#0;n#span#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#svg#0;n#span#0;n#span#0;n#a#0;n#li#2;n#ul#0;n#nav#0;n#span#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#svg#0;n#span#0;n#span#0;n#a#0;n#li#5;n#ul#0;n#nav#0;n#span#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#polygon#0;n#svg#0;n#span#0;n#span#0;n#a#0;n#li#5;n#ul#0;n#nav#0;n#span#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/css/main.sass">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="681">
-          <caret line="349" column="21" lean-forward="false" selection-start-line="349" selection-start-column="21" selection-end-line="349" selection-end-column="21" />
+        <state relative-caret-position="595">
+          <caret line="47" column="17" lean-forward="true" selection-start-line="47" selection-start-column="17" selection-end-line="47" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/home.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="64" lean-forward="false" selection-start-line="7" selection-start-column="64" selection-end-line="7" selection-end-column="64" />
+        <state relative-caret-position="391">
+          <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
           <folding />
         </state>
       </provider>

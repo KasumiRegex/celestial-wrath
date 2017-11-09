@@ -29,20 +29,22 @@ $title: lexio
 $text-color: #FFF
 $background_color: #222222
 $light_blue: #49B7FF
+$ripple_distance: -15px
+$ripple_time: 0.8s
 
 $font_size_text: 1.1em
 $font_size_text_medium: 1.2em
 $font_size_text_big: 1.3em
 
-$font_size_h: 1.5em
+$font_size_h: 1.3em
 $font_size_h_medium: 1.6em
 $font_size_h_big: 2em
 
-$font_size_h2: 1.5em
+$font_size_h2: 1.3em
 $font_size_h2_medium: 1.5em
 $font_size_h2_big: 1.5em
 
-$font_size_title: 1.6em
+$font_size_title: 1.3em
 $font_size_title_medium: 2em
 $font_size_title_big: 3em
 
@@ -270,6 +272,9 @@ nav
   height: 25px
   background-size: contain
   background-repeat: no-repeat
+  svg
+    height: inherit
+    width: inherit
 
 .home_logo
   background-image: $home_icon
@@ -296,10 +301,38 @@ nav
   justify-content: center
   border-radius: 50%
   background-color: #2176AD
+  border: 3px solid #2176AD
   width: 45px
   height: 45px
   margin: 0 0 0 5px
+  svg path
+    fill: #49B7FF
+  +transformation(all, 0.2s, ease-in)
+  @include break-three
+    position: relative
+    &:hover
+      border-color: #dfdfdf
+      background-color: #11669D
+      svg path
 
+        fill: #dfdfdf
+    &:before
+      content: ''
+      position: absolute
+      border:  solid 4px
+      border-color: #2176AD
+      border-radius: 50px
+      top: 0
+      right: 0
+      bottom: 0
+      left: 0
+      -webkit-animation-duration: $ripple_time
+      animation-duration: $ripple_time
+      +transformation(all, 0.2s, ease-in)
+    &:hover:before, &:focus:before // //&:active:before
+      border-color: #11669D
+      -webkit-animation-name: ripple-out
+      animation-name: ripple-out
   @include break-four
     height: 60px
     width: 60px
@@ -448,6 +481,7 @@ main .wrapper
       margin-top: 10px
     .member_nickname
       font-size: $font_size_h2
+      font-style: italic
     .member_img
       width: 150px
       height: 150px
@@ -597,49 +631,55 @@ footer
 @keyframes shine
   +shineKeyFrames()
 
-/*.shiny
-  display: inline-block
+
+@-moz-keyframes ripple-out
+  100%
+    top: $ripple_distance
+    right: $ripple_distance
+    bottom: $ripple_distance
+    left: $ripple_distance
+
+@-webkit-keyframes ripple-out
+  100%
+    top: $ripple_distance
+    right: $ripple_distance
+    bottom: $ripple_distance
+    left: $ripple_distance
+    opacity: 0
+
+
+@keyframes ripple-out
+  100%
+    top: $ripple_distance
+    right: $ripple_distance
+    bottom: $ripple_distance
+    left: $ripple_distance
+    opacity: 0
+
+
+/*.ripple-out
+  //display: inline-block
+  vertical-align: middle
+  -webkit-transform: translateZ(0)
+  transform: translateZ(0)
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0)
+  -webkit-backface-visibility: hidden
+  backface-visibility: hidden
+  -moz-osx-font-smoothing: grayscale
   position: relative
-  text-align: center
-  color: #00c7ec
-  border: 1px solid #00c7ec
-  border-radius: 5px
-  line-height: 3em
-  padding-left: 5em
-  padding-right: 5em
-  box-shadow: 0 0 0 0 transparent
-  -webkit-transition: all 0.2s ease-in
-  -moz-transition: all 0.2s ease-in
-  transition: all 0.2s ease-in
-  &:hover
-  color: white
-  box-shadow: 0 0 30px 0 rgba(0, 199, 236, 0.5)
-  background-color: #00c7ec
-  -webkit-transition: all 0.2s ease-out
-  -moz-transition: all 0.2s ease-out
-  transition: all 0.2s ease-out
+  z-index: 2
   &:before
-  -webkit-animation: shine 0.5s 0s linear
-  -moz-animation: shine 0.5s 0s linear
-  animation: shine 0.5s 0s linear
-  &:active
-  box-shadow: 0 0 0 0 transparent
-  -webkit-transition: box-shadow 0.2s ease-in
-  -moz-transition: box-shadow 0.2s ease-in
-  transition: box-shadow 0.2s ease-in
-  &:before
-  content: ""
-  display: block
-  width: 0px
-  height: 86%
-  position: absolute
-  top: 7%
-  left: 0%
-  opacity: 0
-  background: white
-  box-shadow: 0 0 15px 3px white
-  -webkit-transform: skewX(-20deg)
-  -moz-transform: skewX(-20deg)
-  -ms-transform: skewX(-20deg)
-  -o-transform: skewX(-20deg)
-  transform: skewX(-20deg)
+    content: ''
+    position: absolute
+    border: #21760D solid 6px
+    border-radius: 50px
+    top: 0
+    right: 0
+    bottom: 0
+    left: 0
+    -webkit-animation-duration: 0.8s
+    animation-duration: 0.8s
+    z-index: 1
+  &:hover:before, &:focus:before, &:active:before
+    -webkit-animation-name: ripple-out
+    animation-name: ripple-out
