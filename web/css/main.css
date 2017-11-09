@@ -40,12 +40,18 @@
     .tablet {
       display: block; } }
 
+html {
+  height: 100%; }
+
 body {
   background-color: #222222;
   font: 1.1em cameronsans, sans-serif;
   /*background: url(/images/wallpaper.png) repeat */
   color: #FFF;
-  text-align: center; }
+  text-align: center;
+  position: relative;
+  min-height: 100%;
+  padding-bottom: 100px; }
   @media screen and (min-width: 41em) {
     body {
       font-size: 1.2em; } }
@@ -567,6 +573,8 @@ main .wrapper {
   background-image: url("../img/profile_pictures/ashowl.jpg"); }
 
 footer {
+  position: absolute;
+  bottom: 0;
   background: #49B7FF;
   height: 100px;
   width: 100%;
