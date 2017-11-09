@@ -322,7 +322,7 @@ main > div > span:nth-child(2) {
 .overwatch_icon {
   background-image: url("../img/games/overwatch.png"); }
 
-/*home.html ----------------------------------------------------------------------------------------------------- */
+/*old_home.html ----------------------------------------------------------------------------------------------------- */
 /* REPLACE THIS! */
 #main_home_icon {
   background-image: url("../img/team.svg"); }

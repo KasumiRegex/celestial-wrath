@@ -62,6 +62,7 @@ $hots_icon: url("../img/heroes_icon.png")
 
 /*player icons
 $ashowl_icon: url("../img/profile_pictures/ashowl.jpg")
+$footer_height: 100px
 
 @mixin small-screen
   @media screen and (max-width: $break-two)
@@ -139,16 +140,23 @@ $ashowl_icon: url("../img/profile_pictures/ashowl.jpg")
   @include break-two
     display: block
 
+html
+  height: 100%
+
 body
   background-color: $background_color
   font: $font_size_text $textFont, sans-serif
   /*background: url(/images/wallpaper.png) repeat
   color: $text-color
   text-align: center
+  position: relative
+  min-height: 100%
+  padding-bottom: $footer_height
   @include break-two
     font-size: $font_size_text_medium
   @include break-four
     font-size: $font_size_text_big
+
 
 .wrapper
   max-width: $break-four
@@ -613,8 +621,10 @@ main .wrapper
   background-image: $ashowl_icon
 
 footer
+  position: absolute
+  bottom: 0
   background: $light_blue
-  height: 100px
+  height: $footer_height
   width: 100%
   border-top: white 2px solid
 
