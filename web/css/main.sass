@@ -58,7 +58,7 @@ $facebook_icon: url("../img/facebook.svg")
 $twitch_icon: url("../img/twitch.svg")
 $disord_icon: url("../img/discord.svg")
 $youtube_icon: url("../img/youtube.svg")
-$hots_icon: url("../img/heroes_icon.png")
+$ow_icon: url("../img/profile_pictures/Overwatch_circle_logo.svg")
 
 /*player icons
 $ashowl_icon: url("../img/profile_pictures/ashowl.jpg")
@@ -196,7 +196,8 @@ header
 
 #navigation_logo
   background-size: contain
-  background: url("../img/logo.png") no-repeat
+  background-image: url("../img/logo.png")
+  background-repeat: no-repeat
   width: 60px
   height: 60px
   margin: 0 10px 0 10px
@@ -357,6 +358,9 @@ main .wrapper
   display: block
   width: 55px
   height: 55px
+  svg
+    height: inherit
+    width: inherit
   @include break-two
     width: 80px
     height: 80px
@@ -364,8 +368,6 @@ main .wrapper
     width: 100px
     height: 100px
 
-.hots_icon
-  background-image: $hots_icon
 
 #introduction_title
   font-family: $font_size_title

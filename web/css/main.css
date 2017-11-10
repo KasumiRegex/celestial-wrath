@@ -98,7 +98,8 @@ header {
 
 #navigation_logo {
   background-size: contain;
-  background: url("../img/logo.png") no-repeat;
+  background-image: url("../img/logo.png");
+  background-repeat: no-repeat;
   width: 60px;
   height: 60px;
   margin: 0 10px 0 10px; }
@@ -264,6 +265,9 @@ main .wrapper {
   display: block;
   width: 55px;
   height: 55px; }
+  .main_icon svg {
+    height: inherit;
+    width: inherit; }
   @media screen and (min-width: 41em) {
     .main_icon {
       width: 80px;
@@ -272,9 +276,6 @@ main .wrapper {
     .main_icon {
       width: 100px;
       height: 100px; } }
-
-.hots_icon {
-  background-image: url("../img/heroes_icon.png"); }
 
 #introduction_title {
   font-family: 1.3em;
