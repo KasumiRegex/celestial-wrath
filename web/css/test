@@ -1,0 +1,24 @@
+.sprite
+  background-image: url(spritesheet.png)
+  background-repeat: no-repeat
+  display: block
+
+.sprite-defense
+  width: 175px
+  height: 150px
+  background-position: -5px -5px
+
+.sprite-dps
+  width: 172px
+  height: 150px
+  background-position: -5px -165px
+
+.sprite-healer
+  width: 175px
+  height: 150px
+  background-position: -190px -5px
+
+.sprite-tank
+  width: 175px
+  height: 150px
+  background-position: -187px -165px

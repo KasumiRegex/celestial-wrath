@@ -1,0 +1,75 @@
+$break-medium: 36em
+$break-big: 80em
+
+$break-two: 36em
+$break-three: 65em
+$break-four: 76em
+
+$scale_factor_small_x: 93/278
+$scale_factor_small_y: 80/240
+$scale_factor_medium_x: 185/278
+$scale_factor_medium_y: 160/240
+$scale_factor: 1
+
+@mixin medium-screen
+  @media screen and (min-width: $break-three)
+    @content
+
+@mixin big-screen
+  @media screen and (min-width: $break-big)
+    @content
+
+
+=background_position($x, $y)
+  background-position: $x*$scale_factor_small_x $y*$scale_factor_small_y
+
+  @include medium-screen
+    background-position: round($x*$scale_factor_medium_x) round($y*$scale_factor_medium_y)
+
+  @include big-screen
+    background-position: $x*$scale_factor $y*$scale_factor
+
+
+/* overwatch icons http://overwatch.gamepedia.com/Heroes
+
+.sprite
+  background-image: url(../img/role_spritesheet_small.png)
+  background-repeat: no-repeat
+  display: block
+
+  @include medium-screen
+    background-image: url(../img/role_spritesheet_medium.png)
+
+
+  @include big-screen
+    background-image: url(../img/role_spritesheet.png)
+
+
+.overwatch_icon
+  width: 131px*$scale_factor_small_x
+  height: 112.5px*$scale_factor_small_y
+
+  @include medium-screen
+    width: round(131px*$scale_factor_medium_x)
+    height: round(112.5px*$scale_factor_medium_y)
+
+  @include big-screen
+    width: 131px
+    height: 112.5px
+
+
+.sprite-Icon-Defense
+  @extend .overwatch_icon
+  +background_position( -5px, -5px)
+
+.sprite-Icon-Dps
+  @extend .overwatch_icon
+  +background_position( -5px, -123px)
+
+.sprite-Icon-Healer
+  @extend .overwatch_icon
+  +background_position( -142.5px, -5px)
+
+.sprite-Icon-Tank
+  @extend .overwatch_icon
+  +background_position( -140px, -123px)
