@@ -1,0 +1,61 @@
+/* overwatch icons http://overwatch.gamepedia.com/Heroes */
+.sprite {
+  background-image: url(../img/role_spritesheet_small.png);
+  background-repeat: no-repeat;
+  display: block; }
+  @media screen and (min-width: 65em) {
+    .sprite {
+      background-image: url(../img/role_spritesheet_medium.png); } }
+  @media screen and (min-width: 80em) {
+    .sprite {
+      background-image: url(../img/role_spritesheet.png); } }
+
+.overwatch_icon, .sprite-Icon-Defense, .sprite-Icon-Dps, .sprite-Icon-Healer, .sprite-Icon-Tank {
+  width: 43.8237410072px;
+  height: 37.5px; }
+  @media screen and (min-width: 65em) {
+    .overwatch_icon, .sprite-Icon-Defense, .sprite-Icon-Dps, .sprite-Icon-Healer, .sprite-Icon-Tank {
+      width: 87px;
+      height: 75px; } }
+  @media screen and (min-width: 80em) {
+    .overwatch_icon, .sprite-Icon-Defense, .sprite-Icon-Dps, .sprite-Icon-Healer, .sprite-Icon-Tank {
+      width: 131px;
+      height: 112.5px; } }
+
+.sprite-Icon-Defense {
+  background-position: -1.6726618705px -1.6666666667px; }
+  @media screen and (min-width: 65em) {
+    .sprite-Icon-Defense {
+      background-position: -4px -4px; } }
+  @media screen and (min-width: 80em) {
+    .sprite-Icon-Defense {
+      background-position: -5px -5px; } }
+
+.sprite-Icon-Dps {
+  background-position: -1.6726618705px -41px; }
+  @media screen and (min-width: 65em) {
+    .sprite-Icon-Dps {
+      background-position: -4px -82px; } }
+  @media screen and (min-width: 80em) {
+    .sprite-Icon-Dps {
+      background-position: -5px -123px; } }
+
+.sprite-Icon-Healer {
+  background-position: -47.6708633094px -1.6666666667px; }
+  @media screen and (min-width: 65em) {
+    .sprite-Icon-Healer {
+      background-position: -95px -4px; } }
+  @media screen and (min-width: 80em) {
+    .sprite-Icon-Healer {
+      background-position: -142.5px -5px; } }
+
+.sprite-Icon-Tank {
+  background-position: -46.8345323741px -41px; }
+  @media screen and (min-width: 65em) {
+    .sprite-Icon-Tank {
+      background-position: -94px -82px; } }
+  @media screen and (min-width: 80em) {
+    .sprite-Icon-Tank {
+      background-position: -140px -123px; } }
+
+/*# sourceMappingURL=role.css.map */
