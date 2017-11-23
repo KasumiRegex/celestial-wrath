@@ -29,6 +29,11 @@ $title: lexio
 $text-color: #FFF
 $background_color: #222222
 $light_blue: #49B7FF
+//$navBackground: #2176AD
+$navBackground: #0A67A3
+$navBackgroundHover: #054F7F
+$activeNav-color: #FF4100
+
 $ripple_distance: -15px
 $ripple_time: 0.8s
 
@@ -318,14 +323,24 @@ nav
 .youtube_logo
   background-image: $youtube_icon
 
+.background-circle.active
+  background: $activeNav-color
+  border-color: #fff
+
+.background-circle.active::before
+  border-color: $activeNav-color
+
+.background-circle.active svg path
+  fill: #fff
+
 .background-circle
   display: flex
   align-items: center
   flex-direction: row
   justify-content: center
   border-radius: 50%
-  background-color: #2176AD
-  border: 3px solid #2176AD
+  background-color: $navBackground
+  border: 3px solid $navBackground
   width: 45px
   height: 45px
   margin: 0 0 0 5px
@@ -336,14 +351,14 @@ nav
     position: relative
     &:hover
       border-color: #dfdfdf
-      background-color: #11669D
+      background-color: $navBackgroundHover
       svg path
 
         fill: #dfdfdf
     &:before
       content: ''
       position: absolute
-      border: 4px solid #2176AD
+      border: 4px solid $navBackground
       border-radius: 50px
       top: 0
       right: 0
@@ -353,7 +368,7 @@ nav
       animation-duration: $ripple_time
       +transformation(all, 0.2s, ease-in)
     &:hover:before, &:focus:before // //&:active:before
-      border-color: #11669D
+      border-color: $navBackgroundHover
       -webkit-animation-name: ripple-out
       animation-name: ripple-out
   @include break-four
