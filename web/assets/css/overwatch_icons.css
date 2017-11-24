@@ -1,13 +1,13 @@
 /* overwatch icons http://overwatch.gamepedia.com/Heroes */
-.sprite {
+.overwatch-sprite {
   background-image: url(../img/overwatch_spritesheet_small.png);
   background-repeat: no-repeat;
   display: block; }
   @media screen and (min-width: 65em) {
-    .sprite {
+    .overwatch-sprite {
       background-image: url(../img/overwatch_spritesheet_medium.png); } }
   @media screen and (min-width: 80em) {
-    .sprite {
+    .overwatch-sprite {
       background-image: url(../img/overwatch_spritesheet.png); } }
 
 .overwatch_icon, .sprite-Icon-Junkrat, .sprite-Icon-Lucio, .sprite-Icon-Roadhog, .sprite-Icon-Soldier76, .sprite-Icon-ana, .sprite-Icon-bastion, .sprite-Icon-doomfist, .sprite-Icon-dva, .sprite-Icon-genji, .sprite-Icon-hanzo, .sprite-Icon-mccree, .sprite-Icon-mei, .sprite-Icon-mercy, .sprite-Icon-moira, .sprite-Icon-orisa, .sprite-Icon-pharah, .sprite-Icon-reaper, .sprite-Icon-reinhardt, .sprite-Icon-sombra, .sprite-Icon-symmetra, .sprite-Icon-torbjorn, .sprite-Icon-tracer, .sprite-Icon-widowmaker, .sprite-Icon-winston, .sprite-Icon-zarya, .sprite-Icon-zenyatta {

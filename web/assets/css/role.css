@@ -1,13 +1,13 @@
 /* overwatch icons http://overwatch.gamepedia.com/Heroes */
-.sprite {
+.role-sprite {
   background-image: url(../img/role_spritesheet_small.png);
   background-repeat: no-repeat;
   display: block; }
   @media screen and (min-width: 65em) {
-    .sprite {
+    .role-sprite {
       background-image: url(../img/role_spritesheet_medium.png); } }
   @media screen and (min-width: 80em) {
-    .sprite {
+    .role-sprite {
       background-image: url(../img/role_spritesheet.png); } }
 
 .overwatch_icon, .sprite-Icon-Defense, .sprite-Icon-Dps, .sprite-Icon-Healer, .sprite-Icon-Tank {
